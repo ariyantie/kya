@@ -1,0 +1,22 @@
+{
+  "name": "marikaya-lending-platform",
+  "version": "1.0.0",
+  "description": "MariKaya - Complete Digital Lending Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run mobile:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "mobile:start": "cd mobile && npm start",
+    "mobile:android": "cd mobile && npm run android",
+    "install:all": "npm install && cd backend && npm install && cd ../mobile && npm install",
+    "build:backend": "cd backend && npm run build",
+    "build:mobile": "cd mobile && npm run build"
+  },
+  "keywords": ["lending", "fintech", "mobile", "react-native", "nodejs"],
+  "author": "MariKaya Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
